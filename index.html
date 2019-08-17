@@ -1,18 +1,90 @@
 <!DOCTYPE html>
 
-<html lang="en-us">
+<html lang="en-us"class="h-100">
 
-<head>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+	    <!-- Custom styles -->
+        <link href="sticky-footer-navbar.css" rel="stylesheet">
 
-  <meta charset="UTF-8">
-  <title>Bootstrap Demo</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <!-- FontAwesome -->
+        <script src="https://kit.fontawesome.com/9409dd701e.js"></script>
+ 
+        <title>Latitude Analysis Dashboard with Attitude!</title>
+        <style type="text/css">
+            .row div {
+                border: 1px solid silver;
+            }
+        </style>
+    </head>
 
-</head>
+    <body class="d-flex flex-column h-100">
+	    <header>
+			<nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: #7975cd;">
+	            <a href="#" class="navbar-brand"><i class="fad fa-globe-stand"></i> Latitude</a>
+	            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse"><i class="fad fa-bars"></i> Menu</button>
+	            <div class="collapse navbar-collapse" id="navbarCollapse">
+		            <ul class="navbar-nav ml-auto">
+						<li class="nav-item dropdown">
+					        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fad fa-analytics"></i> Plots</a>
+					        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					          <a class="dropdown-item" href="Plots/max_temperature/index.html">Max Temperature</a>
+					          <a class="dropdown-item" href="Plots/humidity/index.html">Humidity</a>
+					          <a class="dropdown-item" href="Plots/cloudiness/index.html">Cloudiness</a>
+					          <a class="dropdown-item" href="Plots/wind_speed/index.html">Wind Speed</a>
+					        </div>
+						</li>
+		                <li class="navbar-item">
+		                    <a href="Comparisons/index.html" class="nav-link"><i class="fad fa-clone"></i> Comparisons</a>
+		                <li class="navbar-item">
+		                    <a href="Data/index.html" class="nav-link"><i class="fad fa-database"></i> Data</a>
+		                </li>
+		            </ul>
+	            </div>
+	        </nav>
+        </header>
 
-<body>
+   		<main role="main" class="flex-shrink-0">
+	        <div class="container" style="margin-top:30px;">
+                <h1>Summary: Latitude vs. X</h1>
+	            <div class="row">
+	                <div class="col-sm-8">
+		                <img class="card-img-top" src="Resources/assets/images/Fig1.png" alt="Max Temperature">
+	                </div>
+	                <div class="col-sm-4">
+		                <h4>Visualizations</h4>
+		                <div class="row">
+			                <div class="col-sm-6">
+				                <a href="plots/max_temperature/index.html" rel=""><img class="card-img-top" src="Resources/assets/images/Fig1.png" alt="Max Temperature"></a>
+				                <a href="plots/humidity/index.html" rel=""><img class="card-img-top" src="Resources/assets/images/Fig2.png" alt="Humidity"></a>
+			                </div>
+			                <div class="col-sm-6">
+				                <a href="plots/cloudiness/index.html" rel=""><img class="card-img-top" src="Resources/assets/images/Fig3.png" alt="Cloudiness"></a>
+				                <a href="plots/wind_speed/index.html" rel=""><img class="card-img-top" src="Resources/assets/images/Fig4.png" alt="Wind Speed"></a>
+			                </div>
+		                </div>
+	                </div>
+	            </div>
+	        </div>
+   		</main>
+        
+        <footer class="footer mt-auto py-3">
+		  <div class="container">
+		    <span class="text-muted"><center>Page developed by Johnny Asbury<br />© Copyright Coding Bootcamp 2019</center></span>
+		  </div>
+		</footer>
 
-</body>
-
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    </body>
 </html>
